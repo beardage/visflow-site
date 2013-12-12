@@ -19,18 +19,13 @@ updates from our status database in ‘real time.’
 
 update.php links
 ============
-create table
-update.php?mode=create&table=[tablename]
+create table - update.php?mode=create&table=[tablename]
 
-add worker
-update.php?mode=add&table=[tablename]&status=1
+add worker - update.php?mode=add&table=[tablename]&status=1
 
-update worker (complete)
-update.php?mode=update&table=[tablename]&status=2
+update worker (complete) - update.php?mode=update&table=[tablename]&status=2
 
-update worker (error)
-update.php?mode=update&table=[tablename]&status=3
+update worker (error) - update.php?mode=update&table=[tablename]&status=3
 
-reset table
-update.php?mode=reset&table=[tablename]
+reset table - update.php?mode=reset&table=[tablename]
 
