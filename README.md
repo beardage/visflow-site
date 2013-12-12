@@ -19,13 +19,12 @@ updates from our status database in ‘real time.’
 
 update.php links
 ============
+The basic idea is that imake.sh curls specific urls in order to pass data to a mysql database as workers are created and finish. These are some example links if you are writing your own script:
+
 create table - update.php?mode=create&table=[tablename]
-
-add worker - update.php?mode=add&table=[tablename]&status=1
-
-update worker (complete) - update.php?mode=update&table=[tablename]&status=2
-
-update worker (error) - update.php?mode=update&table=[tablename]&status=3
-
+add worker - update.php?mode=add&table=[tablename]&id=[workerid]&status=1
+update worker (complete) - update.php?mode=update&table=[tablename]&id=[workerid]&status=2
+update worker (error) - update.php?mode=update&table=[tablename]&id=[workerid]&status=3
 reset table - update.php?mode=reset&table=[tablename]
+
 
